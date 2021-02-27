@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="cost_hint_text">Cost of Service</string>
+    <string name="how_was_the_service_text">How was the service?</string>
+    <string name="okay_radio_text">Okay - 20%</string>
+    <string name="good_radio_text">Good - 25%</string>
+    <string name="great_radio_text">Great - 30%</string>
+    <string name="pandemic_radio_text">Pandemic - 40%</string>
+    <string name="round_up_text">Round up the tip?</string>
+    <string name="calculate_button_text">Total with tip</string>
+    <string name="invalid_cost">Enter a valid dollar amount</string>
+    <string name="tip_format">Tip: %s</string>
+    <string name="total_format">Total: %s</string>
+</resources>
