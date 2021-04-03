@@ -7,6 +7,7 @@ import android.text.InputFilter
 import android.text.Spanned
 import android.text.TextWatcher
 import android.view.KeyEvent
+import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
@@ -69,6 +70,14 @@ class MainActivity : AppCompatActivity() {
             return true
         }
         return false
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        currentFocus?.also {
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(it.windowToken, 0)
+        }
+        return super.dispatchTouchEvent(ev)
     }
 }
 
